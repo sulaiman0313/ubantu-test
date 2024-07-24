@@ -1,7 +1,99 @@
-body{
-   height: 100vh;
-   width: 100%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
 }
-h2{
-    color: red;
+.container{
+    background-image: url(bg.png);
+    height: 99vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    /* border: 1px solid red; */
+    display: flex;
+}
+nav .logo img{
+    height: 50px;
+    width: 80px;
+    mix-blend-mode: color-dodge;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+    font-weight: 600;
+}
+.menu li a:hover{
+    transition: 0.5s ease-in all;
+    color: #FFD166;
+
+}
+.button{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    margin-left: 170px;
+    
+}
+.para{
+    margin-top: 15px;
+    margin-left: 150px;
+}
+.para p{
+    /* border: 1px solid yellow; */
+    letter-spacing: 1px;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 1px;
+
+
+}
+.buttn{
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+
+
+
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
 }
